@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Montserrat:ital@0;1&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(./assets/images/erik-mclean-tNO5weLNt-E-unsplash.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    width: 70%;
+    display: grid;
+    grid-template-rows: 1fr;
+    margin: 30px auto;
+    background-color: #181818;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    border-radius: 35px;
+}
+
+.card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    .title{
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5em;
+        color: #B22727;
+        text-transform: uppercase;
+    }
+    .image{
+        max-width: 100%;
+        width: 60%;
+    }
+    .container{
+        font-family: "Delius";
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+        gap: 10px;
+        color: #F7F5F2;
+        font-size: 1em;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        .btn{
+            color: #F7F5F2;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            overflow: hidden;
+            &:hover{
+                color: #bebdbb;
+            }
+        }
+    }
+    input {
+        width: 35%;
+        height: 10%;
+        margin-left: 3%;
+        padding: 5%;
+        background-color: #F7F5F2;
+        outline: none;
+    }
+    
+}
+
+
+
